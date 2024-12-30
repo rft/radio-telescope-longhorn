@@ -1,0 +1,22 @@
+[project]
+name = "longhorn"
+version = "0.1.0"
+description = "Radio telescope longhorn"
+readme = "readme.org"
+requires-python = ">=3.12"
+dependencies = [
+    "urllib3>=2.2.3",
+]
+
+[project.scripts]
+# Change this
+hello = "hello_world:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.6.7",
+]
